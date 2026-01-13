@@ -35,9 +35,6 @@ query = "SELECT * FROM electricity.usage_data;"
 # Collect data into DataFrame
 df = pd.read_sql(query, engine)
 
-# Print the first few rows of the DataFrame
-df.head()
-
 #%% Data Manipulation with Pandas
 
 '''
@@ -65,15 +62,17 @@ summary_dict = {
 }
 '''
 
+# Task One: Display first few rows of the DataFrame
 
-# Task One: Calculate total overall usage (sum kwh)
+# Task Two: Calculate total overall usage (sum kwh)
 
-# Task Two: Group by month and sum overall_usage (sum kwh by month and year)
+# Task Three: Create a new column labeled "month" off of "interval_end_date"
 
-# Task Three: Find the month with the highest overall usage
+# Task Three: Group by month and sum overall_usage (sum kwh by month and year)
 
-# Task Four: Find the Hour of the day with the highest average overall usage
+# Task Four: Find the month with the highest overall usage
 
+# Task Five: Find the Hour of the day with the highest average overall usage
 
 # Finally: Fill out and print the summary dictionary
 
